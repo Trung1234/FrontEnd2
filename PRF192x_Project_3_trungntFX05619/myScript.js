@@ -29,8 +29,7 @@ function register(){
                     if(isEmpty(password)){
                         alert('Hãy nhập vào mật khẩu');
                     }else{
-                        var pass = password.length;
-                        if(pass < 6 || pass > 30){
+                        if(password.length < 6 || password.length > 30){
                             alert('Mật khẩu phải từ 6 đến 30 kí tự');
                         }
                         else{
@@ -59,7 +58,6 @@ function register(){
             }
         }
     }
-
 }
 
 // validate email dùng regex
