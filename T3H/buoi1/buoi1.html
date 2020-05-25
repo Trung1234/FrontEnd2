@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .cal {
+          background-color: #4CAF50;
+          
+          color: white;
+          height: 40px;
+          width: 40px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+          margin: 4px 1px;
+          
+        }
+        input[type=text] {
+            width: 160px;
+            padding: 12px 20px;
+            margin: 8px 0;
+     
+            box-sizing: border-box;
+        }
+        </style>
+        </head>
+<body>
+
+<h1>Caculator</h1>
+
+<form name="caculator">
+<input type="text" name="answer"/><br>
+  <input type="button" onclick="caculator.answer.value+='1'" value="1" class="cal">
+  <input type="button" onclick="caculator.answer.value+='2'" value="2" class="cal">
+  <input type="button" onclick="caculator.answer.value+='3'" value="3" class="cal">
+  <input type="button" onclick="caculator.answer.value+='+'" value="+" class="cal"><br>
+  <input type="button" onclick="caculator.answer.value+='4'" value="4" class="cal">
+  <input type="button" onclick="caculator.answer.value+='5'" value="5" class="cal">
+  <input type="button" onclick="caculator.answer.value+='6'" value="6" class="cal">
+  <input type="button" onclick="caculator.answer.value+='-'" value="-" class="cal"><br>
+  <input type="button" onclick="caculator.answer.value+='7'" value="7" class="cal">
+  <input type="button" onclick="caculator.answer.value+='8'" value="8" class="cal">
+  <input type="button" onclick="caculator.answer.value+='9'" value="9" class="cal">
+  <input type="button" onclick="caculator.answer.value=eval(caculator.answer.value)" value="=" class="cal"><br>
+</form> 
+
+</body>
+</html>
