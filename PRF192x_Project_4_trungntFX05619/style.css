@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+}
+body div{
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 80%;
+  vertical-align: middle;
+}
+.control{
+  background-color: aqua;
+  border-radius: 100%;
+  color: white;
+  padding: 15px 20px;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+
+/* 4 columns side by side */
+.row {
+  margin-left: 40%;
+  float: left;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
