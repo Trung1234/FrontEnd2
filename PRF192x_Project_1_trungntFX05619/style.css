@@ -1,6 +1,6 @@
 
 .container{
-    width: 640px; /*can be in percentage also.*/
+    width: 640px; 
     height: auto;
     margin: 0 auto;
     padding: 10px;
@@ -27,7 +27,7 @@ h2{
   opacity: 0.9;
   text-align: center;
 }
-.result span  {
+.result   {
   color: red;
   font-size: 30px;
   display: inline-block;

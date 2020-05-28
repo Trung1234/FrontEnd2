@@ -1,5 +1,5 @@
 
-
+// display the first image at the first time
 var slideIndex = 1;
 showSlides(slideIndex);
 

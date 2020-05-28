@@ -15,48 +15,58 @@ function register(){
     var city = citys.options[citys.selectedIndex].value;
     // xử lý logic
     if(isEmpty(surname)){
-        alert('Hãy nhập vào họ');
+        alert('Chưa nhập họ');
     }else{
-        if(isEmpty(name)){
-            alert('Hãy nhập vào tên');
-        }else{
-            if(isEmpty(email)){
-                alert('Hãy nhập vào email');
+        if(surname.length<2 || surname.length>30){
+            alert('họ phải từ 2 đến 30 ký tự');
+        }
+        else{
+            if(isEmpty(name)){
+                alert('Hãy nhập vào tên');
             }else{
-                if(!validateEmail(email)){
-                    alert('email không đúng định dạng');
-                }else{
-                    if(isEmpty(password)){
-                        alert('Hãy nhập vào mật khẩu');
+                if(name.length<2 || name.length>30){
+                    alert('Tên phải từ 2 đến 30 ký tự');
+                }
+                else{
+                    if(isEmpty(email)){
+                        alert('Hãy nhập vào email');
                     }else{
-                        if(password.length < 6 || password.length > 30){
-                            alert('Mật khẩu phải từ 6 đến 30 kí tự');
-                        }
-                        else{
+                        if(!validateEmail(email)){
+                            alert('email không đúng định dạng');
+                        }else{
                             if(isEmpty(password)){
-                                alert('Hãy nhập vào ô nhập lại mật khẩu');
+                                alert('Hãy nhập vào mật khẩu');
                             }else{
-                                if(password.localeCompare(repassword)){
-                                    alert('Mật khẩu nhập lại không khớp');
-                                }else{
-                                    if(isEmpty(birthyear)){
-                                        alert('Hãy chọn năm sinh');
-                                    }
-                                    else{
-                                        if(isEmpty(city)){
-                                            alert('Hãy chọn năm thành phố');
-                                        }
-                                        else{
-                                            alert('Đăng kí thành công');
+                                if(password.length < 6 || password.length > 30){
+                                    alert('Mật khẩu phải từ 6 đến 30 kí tự');
+                                }
+                                else{
+                                    if(isEmpty(password)){
+                                        alert('Hãy nhập vào ô nhập lại mật khẩu');
+                                    }else{
+                                        if(password.localeCompare(repassword)){
+                                            alert('Mật khẩu nhập lại không khớp');
+                                        }else{
+                                            if(isEmpty(birthyear)){
+                                                alert('Hãy chọn năm sinh');
+                                            }
+                                            else{
+                                                if(isEmpty(city)){
+                                                    alert('Hãy chọn  thành phố');
+                                                }
+                                                else{
+                                                    alert('Đăng kí thành công');
+                                                }
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
                     }
-                }
+                }               
             }
-        }
+        }       
     }
 }
 

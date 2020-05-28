@@ -12,6 +12,7 @@ function compare(){
     var weight1 = document.getElementById('weightToan').value;
     var height2 = document.getElementById('heightMinh').value;
     var weight2 = document.getElementById('weightMinh').value;
+    //tính bmi bằng gọi hàm 
     var bmi1 = caculateBMI(height1, weight1);
     var bmi2 = caculateBMI(height2, weight2);
     console.log('BMI của Toàn :' +bmi1);
