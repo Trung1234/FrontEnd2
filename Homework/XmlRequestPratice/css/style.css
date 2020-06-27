@@ -16,7 +16,7 @@ button {
   margin: 2px 1px;
   cursor: pointer;
 }
-  .employee-container{
+  .artist-container{
       width: 800px;
       height: auto;
       margin: 0 auto;
@@ -25,17 +25,17 @@ button {
       overflow: auto;
   }
   
-  .employee-container > span{
+  .artist-container > span{
     width: 15%;
     float: left;
     margin: 5px 0px;
   }
-  .employee-container > input{
+  .artist-container > input{
     width: 25%;
     float: left;
     margin: 5px;
   }
-  .employee-container > form{
+  .artist-container > form{
     width: 80%;
     float: left;
     margin: 5px;
@@ -48,19 +48,19 @@ button {
     font-weight: bold;
   }
 
-  #employees{
+  #artists{
     border-spacing: 0px;
     margin: 10px 0px;
     width: 90%;
   }
 
-  #employees td, #employees th {
+  #artists td, #artists th {
     margin: 0 auto;
     border: 1px solid black;
     text-align: center;
   }
   
-  #employees th {
+  #artists th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
