@@ -45,7 +45,7 @@ function  callApi(){
     const promise = new Promise((resolve, reject) => {
         const request = new XMLHttpRequest();
 
-        request.open("GET", "https://corona.lmao.ninja/v2/countries/vn?fbclid=IwAR3UOeT7x5GIQ7S0yTOhzwXS9dZkClhNir_Ns2GBydRveSGM6IVlKs91YSI");
+        request.open("GET", "https://corona.lmao.ninja/v2/countries?fbclid=IwAR2KASM_pswRnSvWwVmeGElFgHgOx7VaNVUcX5ZXapINzVlbsdo08l86QX4");
         request.onload = () => {
             if (request.status === 200) {
                 resolve(request.response);
@@ -66,9 +66,10 @@ function  callApi(){
     promise.then(
         data => {
             console.log("Got data! Promise fulfilled.");
-            var obj = JSON.parse(data);
-            console.log(obj.country);
-     
+            var jsonData = JSON.parse(data);
+            for (var i = 0; i < jsonData.length; i++) {
+                console.log(jsonData[i].country);
+            }
            // document.getElementById('loading').innerHTML ="Tải dữ liệu thành công!";
             
            // document.getElementById('result').innerHTML = JSON.parse(data).value.joke;               

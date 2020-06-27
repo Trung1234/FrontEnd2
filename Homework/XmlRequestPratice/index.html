@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Managment</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/employee.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      </head>
+<body>
+  <div class="employee-container">
+    <button onclick="readData()">Read XML</button>
+  </div>
+  <div class="employee-container">
+    <p id="demo"></p>
+    <p id="title">List of employees</p>
+  </div>
+  <div class="employee-container">  
+    <table id="employees">
+      <tr>
+        <th>Name </th>
+        <th>Department</th>
+        <th>Date of birth </th>
+        <th>Gender</th>
+        <th>Language</th>
+        <th>Action</th>
+      </tr>
+    </table>
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add Department</h4>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <input type="text" class="form-control" id="moreDeparment" >
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button"  onclick="addDepartment()" >Add</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+  <script src="js/myScript.js"></script>
+</body>
+
+</html>

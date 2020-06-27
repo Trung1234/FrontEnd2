@@ -1,0 +1,61 @@
+
+ <p>Duyệt các phần tử mảng trong mảng khác.</p>
+
+ <p id="demo"></p>
+ <script>
+    var employees = [
+    {
+        name: 'Bob',
+        age: 125,
+        gender: 'f',
+        salary: 1500000
+    },
+    {
+        name: 'Helga Brekke',
+        age: 25,
+        gender: 'f',
+        salary: 1500000
+    },
+    {
+        name: 'Christine Hansen',
+        age: 18,
+        gender: 'm',
+        salary: 30000000,
+    },
+    {
+        name: 'Alfred Roob',
+        age: 17,
+        gender: 'm',
+        salary: 20000000,
+    }   
+    ];
+
+    function compareName( a, b ) {
+        if ( a.name < b.name ){
+            return -1;
+        }
+        if ( a.name > b.name ){
+            return 1;
+        }
+        return 0;
+    }
+    function compareAge( a, b ) {
+        if ( a.age < b.age ){
+            return -1;
+        }
+        if ( a.age > b.age ){
+            return 1;
+        }
+        return 0;
+    }
+    employees.sort( compareName );// Sắp xếp danh sách employee theo name tăng dần
+    employees.sort( compareAge );// Sắp xếp danh sách employee theo age tăng dần
+    //employees.sort( compareName ).reverse();// Sắp xếp danh sách employee theo name giảm  dần
+    //employees.sort( compareAge ).reverse();// Sắp xếp danh sách employee theo age  giảm dần
+    employees.forEach(myFunction);
+
+    function myFunction(item, index) {
+        document.getElementById("demo").innerHTML += index +"   "+ "Name :" + item.name  + " Age :"+item.age
+ +"<br>"; 
+    }
+</script>
